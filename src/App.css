@@ -1,38 +1,13 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  background-color: #111827;
+  color:white;
+  user-select: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .MyClass1{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c667.989C120.852%2c645.672%2c211.307%2c551.783%2c299.816%2c466.523C374.32%2c394.754%2c414.122%2c301.622%2c470.421%2c214.834C538.19%2c110.366%2c671.064%2c28.818%2c664.421%2c-95.529C657.828%2c-218.938%2c515.605%2c-283.39%2c438.639%2c-380.083C357.441%2c-482.093%2c320.001%2c-629.687%2c199.538%2c-679.565C77.142%2c-730.243%2c-60.428%2c-676%2c-187.757%2c-639.443C-315.778%2c-602.688%2c-476.074%2c-584.574%2c-539.417%2c-467.408C-603.931%2c-348.076%2c-512.47%2c-205.691%2c-494.982%2c-71.168C-482.664%2c23.586%2c-468.073%2c112.184%2c-451.831%2c206.344C-429.141%2c337.888%2c-473.932%2c496.768%2c-380.562%2c592.166C-288.217%2c686.516%2c-129.826%2c691.964%2c0%2c667.989' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 988.091C1523.468 991.732 1607.605 975.277 1679.075 932.008 1751.667 888.06 1826.915 827.381 1843.061 744.072 1858.894 662.375 1778.024 595.24 1760.092 513.978 1744.095 441.486 1782.18 360.177 1744.262 296.355 1704.5720000000001 229.55 1628.745 192.872 1554.916 168.632 1479.5 143.87099999999998 1396.854 131.642 1321.866 157.67200000000003 1248.348 183.192 1204.539 253.159 1150.391 309.052 1092.739 368.562 993.3009999999999 413.051 994.1949999999999 495.903 995.12 581.646 1114.435 614.571 1154.503 690.3820000000001 1190.938 759.3199999999999 1159.993 855.442 1213.963 911.72 1270.147 970.308 1358.903 984.553 1440 988.091' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   }
-  to {
-    transform: rotate(360deg);
+  
+  .loginClass{
+      background-color: #f1f5f9;
   }
-}
