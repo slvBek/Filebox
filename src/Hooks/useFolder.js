@@ -8,20 +8,12 @@ export const ROOT_FOLDER = {
 };
 export const useFolder =(folderId = null, folder = null) => {
   var {currentUser} = useAuth();
-  // if (currentUser === undefined) {
-  //   currentUser = JSON.parse(localStorage.getItem("localKey"));
-  // }
-  // // filling localstorage
-  // localStorage.setItem("localKey", JSON.stringify(currentUser));
     const ACTIONS = {
         SELECT_FOLDER: "selects folder",
         UPDATE_FOLDER:"update folder",
         SET_CHILD_FOLDERS:"set-child-folders",
         SET_CHILD_FILES: "set-child-files"
-      };
-    
-    
-      
+      }; 
       
       const Reducer = (state, { type, payload }) => {
           switch (type) {

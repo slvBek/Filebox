@@ -1,6 +1,3 @@
-// private routing where user must be logged in to access that component
-
-import React, { Component } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContext";
 const PrivateRoute = () => {

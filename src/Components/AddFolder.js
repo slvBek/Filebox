@@ -143,7 +143,6 @@ var { currentUser } = useAuth();
 
   return (
     <>
-      {/* add folder components begins here */}
       <div className="flex flex-row justify-evenly flex-wrap">
         <div
           className="sm:text-2xl text-xl text-green-400 border-green-200 border-2 rounded-lg p-1 m-1 cursor-pointer"
@@ -153,29 +152,15 @@ var { currentUser } = useAuth();
         >
            <div className="flex flex-wrap justify-center"><img src={folder}  className="w-20 h-20" alt="" /></div>
           New Folder
-        </div>
-        
-
-
-        {/* <div className="sm:text-2xl text-xl text-green-400 border-green-200 border-2 rounded-lg p-1 m-1 cursor-pointer">
-        <div className="flex flex-wrap justify-center"><img src={file}  className="w-20 h-20" alt="" />
-        </div>
-        <div>  <input type="file" onChange={e=>HandleChange(e)} style={{opacity:"0",left:"-9999px",position:"absolute"}}/></div>
-          New File
-        </div> */}
-
-
-<label htmlFor="file" className="sm:text-2xl text-xl text-green-400 border-green-200 border-2 rounded-lg p-1 m-1 cursor-pointer">
-<div className="flex flex-wrap justify-center"><img src={file}  className="w-20 h-20" alt="" />
-        </div>
-<input type="file" name="" onChange={e=>HandleChange(e)} style={{opacity:"0",left:"-9999px",position:"absolute"}} id="file" />
-New File
-</label>
-
-        
       </div>
 
 
+  <label htmlFor="file" className="sm:text-2xl text-xl text-green-400 border-green-200 border-2 rounded-lg p-1 m-1 cursor-pointer">
+    <div className="flex flex-wrap justify-center"><img src={file}  className="w-20 h-20" alt="" /></div>
+    <input type="file" name="" onChange={e=>HandleChange(e)} style={{opacity:"0",left:"-9999px",position:"absolute"}} id="file" />
+    New File
+  </label>  
+      </div>
 
       <div
         className="flex flex-row flex-wrap justify-center p-2 m-2"

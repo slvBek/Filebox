@@ -1,5 +1,3 @@
-// for handling the forgoting of password with the help of google firebase
-
 import React, { Component, useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { Navigate, Link, useNavigate } from "react-router-dom";

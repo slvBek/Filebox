@@ -48,6 +48,7 @@ const Signup = () => {
   };
   return (
     <>
+    <div className="din">
       <div className="flex flex-row flex-wrap justify-center ">
       
         <form
@@ -149,6 +150,7 @@ const Signup = () => {
             </div>
           </div>
         </form>
+      </div>
       </div>
     </>
   );

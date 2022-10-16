@@ -1,6 +1,3 @@
-// connecting with google firebase with the help of important react core topics 
-
-
 import React, { Component, useContext,useEffect} from 'react';
 import {auth} from '../firebase';
 const AuthContext = React.createContext();
@@ -8,7 +5,6 @@ const AuthContext = React.createContext();
 export const useAuth = () =>{
     return useContext(AuthContext);
 }
-
 
 const AuthProvider = ({children}) =>{
 
@@ -53,4 +49,4 @@ const AuthProvider = ({children}) =>{
         );
     }
     
-    export default AuthProvider;
+export default AuthProvider;

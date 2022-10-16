@@ -11,12 +11,9 @@ const Dashboard = () => {
   if (currentUser === undefined) {
     currentUser = JSON.parse(localStorage.getItem("localKey"));
   }
-  // filling localstorage
+
   localStorage.setItem("localKey", JSON.stringify(currentUser));
-  // handles logout with the help of google firebase
   const handleLogout = () => {
-    // setError("");
-    // try {
     logout();
     console.log("hello logout");
     localStorage.removeItem("localKey");
@@ -32,6 +29,7 @@ const Dashboard = () => {
 
   return (
     <>
+    <div className="di">
     <div className="text-center flex flex-wrap justify-center">
     <div className="border-2 border-gray-200 basis-1/2 p-4 rounded-lg">
       <div className="text-center flex flex-col flex-wrap">
@@ -67,6 +65,7 @@ const Dashboard = () => {
         </button>
       </div>
 
+      </div>
       </div>
       </div>
     </>

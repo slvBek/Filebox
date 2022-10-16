@@ -40,6 +40,7 @@ const Login = () => {
 
   return (
     <>
+    <div className="din">
       <div className="flex flex-row flex-wrap justify-center">
      
         <form
@@ -99,6 +100,7 @@ const Login = () => {
             </div>
           </div>
         </form>
+      </div>
       </div>
     </>
   );

@@ -11,3 +11,32 @@
   .loginClass{
       background-color: #f1f5f9;
   }
+  .bek {
+    margin-top: 220px;
+  }
+  .sun {
+    width: 80px;
+    height: 80px;
+    position:relative;
+    left: -540%;
+    margin-top: 10%;
+  }
+  .bs {
+    margin-top: -4%;
+    margin-right: 82%;
+  }
+  .man {
+    margin-left: 85%;
+    margin-top: -3%;
+  }
+  .din {
+    margin-top: 7%;
+    width: 1000px;
+    margin-left: 20%;
+
+  }
+  .di {
+    margin-top: 5%;
+    width: 1000px;
+    margin-left: 20%;
+  }
