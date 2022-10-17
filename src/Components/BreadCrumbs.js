@@ -11,10 +11,12 @@ const BreadCrumbs = ({ currentFolder }) => {
 
   return (
     <div className="p-1 m-1">
-      {path.map((x, i) => (
+      <div className="slv">
+        {path.map((x, i) => ( 
           <span className="m-1 p-1" key={i}>
-              <Link className="text-gray-300 hover:text-sky-200 text-2xl" to ={x.id===null ? "/task" : `/folder/${x.id}`}>{x.name}</Link>
+            <Link className="text-gray-300 hover:text-sky-200 text-2xl" to ={x.id===null ? "/task" : `/folder/${x.id}`}>{x.name}</Link>
           </span>))}
+      </div>
     </div>
   );
 };

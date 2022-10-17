@@ -18,7 +18,6 @@ var { currentUser } = useAuth();
   if (currentUser === undefined) {
     currentUser = JSON.parse(localStorage.getItem("localKey"));
   }
-  // filling localstorage
   localStorage.setItem("localKey", JSON.stringify(currentUser));
 
 
