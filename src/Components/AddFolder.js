@@ -59,8 +59,8 @@ var { currentUser } = useAuth();
 
 
   const HandleChange = (e) => {
-    const file = e.target.files[0];
-    let ffName = file.name;
+    const file = e.target.files[0] | "file";
+    let ffName = file?.name;
     ffName = ffName.trim();
     if(!ffName){return;}
     if (currentFolder === null || file == null) {
