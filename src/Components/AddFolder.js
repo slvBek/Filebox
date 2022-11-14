@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useRef, useState } from "react";
 import { storage, database } from "../firebase";
 import { ProgressBar, Toast } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext";
@@ -12,7 +12,8 @@ const AddFolder = (props) => {
 const { currentFolder } = props;
   const [modal, setModal] = useState({ display: "none" });
   const [name, setName] = useState("");
-var { currentUser } = useAuth();
+  const { currentUser } = useAuth();
+  const fileRef = useRef(null);
   const [uploadingFiles, setUploadingFiles] = useState([]);
 
   if (currentUser === undefined) {
@@ -60,7 +61,7 @@ var { currentUser } = useAuth();
 
   const HandleChange = (e) => {
     const file = e.target.files[0];
-    let ffName = file?.name;
+    let ffName = file.name;
     ffName = ffName.trim();
     if(!ffName){return;}
     if (currentFolder === null || file == null) {
@@ -136,9 +137,9 @@ var { currentUser } = useAuth();
           })
         }
       )
+      fileRef.current.value = null;
+      setName("");
   };
-
-
 
   return (
     <>
@@ -156,7 +157,7 @@ var { currentUser } = useAuth();
 
   <label htmlFor="file" className="sm:text-2xl text-xl text-green-400 border-green-200 border-2 rounded-lg p-1 m-1 cursor-pointer">
     <div className="flex flex-wrap justify-center"><img src={file}  className="w-20 h-20" alt="" /></div>
-    <input type="file" name="" onChange={e=>HandleChange(e)} style={{opacity:"0",left:"-9999px",position:"absolute"}} id="file" />
+    <input type="file" name="" onChange={e=>HandleChange(e)} style={{opacity:"0",left:"-9999px",position:"absolute"}} id="file" ref={fileRef} />
     New File
   </label>  
       </div>
